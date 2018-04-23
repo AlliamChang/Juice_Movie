@@ -1,0 +1,464 @@
+.movie-basicInfo {
+    width: 900px;
+    height: 400px;
+}
+.movie-otherInfo {
+    width: 600px;
+}
+
+
+a img:hover,
+a img.selected{
+    opacity: 0.7;
+}
+
+#movie-poster {
+    padding-left: 0px;
+    padding-top: 5px;
+    float: left;
+}
+
+/*#movie-infoID {*/
+    /*width: 100px;*/
+    /*padding-left: 10px;*/
+/*}*/
+
+/*#movie-infoDetail {*/
+    /*width: 400px;*/
+/*}*/
+#movie-info-table {
+    width:490px;
+    padding-left: 10px;
+}
+
+#movie-info-table p {
+    font-size: 14px;
+    margin: 5px;
+    color: gray;
+}
+
+#movie-rate {
+    width: 260px;
+}
+
+#movie-rate-ID {
+    font-family: AvenirNext-Bold;
+    font-size: 20px;
+    color: #9b9b9b;
+    height: 30px;
+    margin: 0px;
+}
+
+.movieRate {
+    font-size: 30px;
+    position: relative;
+    padding-top: 0px;
+    padding-right: 10px;
+    margin: 0px;
+}
+
+.movieRate p {
+    color: black;
+
+}
+
+#rate-picAndNum {
+    padding-top: 0px;
+}
+
+.rate-chart p {
+    margin: 0px;
+    color: gray;
+}
+#better-than p {
+    color: gray;
+}
+
+#movie-poster, #movie-info-table, #movie-rate {
+    float: left;
+}
+
+.movieRate, #rate-picAndNum {
+    float: left;
+}
+
+#movie-storyline {
+    width: 600px;
+}
+
+.movie-otherInfo a {
+    font-size: 14px;
+    color: deepskyblue;
+    padding-bottom: 2px;
+    text-decoration: none;
+}
+
+.tip-number{
+    font-size: 16px;
+    font-weight: 500;
+    color: gray;
+    white-space: pre;
+}
+
+#relativePeople a,
+.filmMaker a,
+#alsoLike a,
+.userName{
+    color: deepskyblue;
+    padding-bottom: 2px;
+    text-decoration: none;
+}
+
+#relativePeople a:hover,
+.filmMaker a:hover,
+#alsoLike a:hover,
+.userName:hover{
+    color: blue;
+    text-decoration: underline;
+    text-underline-color: blue;
+}
+
+table.reviews-table td {
+    padding-bottom: 20px;
+}
+
+table.relativePeople-table td,
+table.alsoLike-table td {
+    position: static;
+}
+
+.reviews-type-but{
+    padding: 3px;
+    background-color: transparent;
+    border-color:transparent;
+    border-width: 2px;
+    font-size: 17px;
+    color: gray;
+    transition: all 0.3s;
+}
+
+.choose-but{
+    padding: 3px;
+    background-color: transparent;
+    border-color:transparent;
+    border-width: 2px;
+    font-size: 17px;
+    color: gray;
+    transition: all 0.3s;
+}
+
+
+.review-piece {
+    width: 600px;
+    border: 1px groove black;
+    padding-left: 20px;
+    padding-bottom: 30px;
+}
+
+.like-div{
+    display: block;
+    float: right;
+    position: relative;
+    padding-right: 30px;
+    transition: all 0.7s;
+}
+.like-div .like-pic{
+    width:20px;
+}
+.like-div .like-pic:hover{
+    width: 22px;
+}
+
+/*
+豆瓣rate百分比图的css
+ */
+.power {
+    height: 10px;
+    float: left;
+    margin: 1px 4px;
+    background: #ffd596 none repeat scroll 0 0;
+}
+
+progress {
+    /*border-radius: 2px;*/
+    /*border-left: 1px #ccc solid;*/
+    /*border-right: 1px #ccc solid;*/
+    /*border-top: 1px #aaa solid;*/
+    background-color: #eeeeee;
+}
+
+progress::-webkit-progress-bar {
+    background-color: #fff8dc;
+}
+
+progress::-webkit-progress-value {
+    background-color: orange;
+}
+
+#relativePeople .turn-page{
+    display: block;
+    float: right;
+    position: relative;
+    top: 0px;
+    margin: 0px;
+}
+
+button.show-more{
+    outline:none;
+    background-color: transparent;
+    border: 2px solid lightskyblue;
+    width: 250px;
+    height: 35px;
+    font-size: 17px;
+    font-family: 'Comic Sans MS';
+    margin-bottom: 10px;
+    margin-left: 20px;
+    transition:  all 0.2s;
+}
+
+button.show-more:hover{
+    background: lightskyblue;
+}
+
+
+
+
+/*弹框*/
+#background-shade {
+    position: fixed;
+    z-index: 750;
+    background-color: rgba(227, 220, 192, 0.85);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.info-tool-position {
+    z-index: 800;
+    position: fixed;
+    top:120px;
+    left:455px;
+    width: 400px;
+    height: 430px;
+    background-color: #fff8dc;
+    color: #808080;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+.info-tool-position .tip-text{
+    background-color: #000;
+    color: #fff;
+    padding: 5px 20px;
+    border-radius: 6px;
+    position: absolute;
+}
+.info-tool-position .tip-text::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+
+.info-tool-position #tip-title{
+    position: absolute;
+    top: 10px;
+    left:110px;
+}
+
+.info-tool-position #tip-comment{
+    position: absolute;
+    top: 125px;
+    left:140px;
+}
+
+.info-tool-position button {
+    padding: 12px 20px;
+    width: 320px;
+    margin: 0 5px;
+    background-color: transparent;
+    border: 0;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #ff7f50;
+    color: #ffffff;
+}
+.info-tool-position button:hover {
+    background-color: #ffa16f;
+}
+.info-tool-position .close-button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 22px;
+    height: 22px;
+    background: url("/images/close.png") no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
+#write-commentW{
+    display: none;
+}
+
+#write-commentW .title{
+    position: absolute;
+    top: 50px;
+    left:50px;
+}
+#write-commentW .comment{
+    position: absolute;
+    top: 130px;
+    left:50px;
+}
+#write-commentW .rating{
+    position: absolute;
+    top: 90px;
+    left:50px;
+}
+#write-commentW .create{
+    position: absolute;
+    top: 350px;
+    left:35px;
+}
+#write-commentW span{
+    font-size: 18px;
+}
+#write-commentW .title-line{
+    font-size: 18px;
+    width: 160px;
+}
+#write-commentW .description-textarea{
+    position: relative;
+    top: 10px;
+    width: 320px;
+    height: 160px;
+    font-size:18px;
+    background-color: transparent;
+}
+
+/*添加到影单*/
+
+#add-to-own-movielist{
+    z-index: 800;
+    position: fixed;
+    top:110px;
+    left:380px;
+    width: 600px;
+    height: 430px;
+    background-color: #fff8dc;
+    color: #808080;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+#add-to-own-movielist #own-movielists-table{
+    width: 300px;
+    float: left;
+    padding-left:15px;
+}
+#add-to-own-movielist #right-div{
+    width: 300px;
+    float: right;
+}
+#add-to-own-movielist #tag-movielist{
+    position: absolute;
+    top:50px;
+    left:20px;
+}
+#add-to-own-movielist ul{
+    position: absolute;
+    top:65px;
+    left:10px;
+    width: 270px;
+    height: 300px;
+    overflow: scroll;
+    padding:10px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+#add-to-own-movielist ul li{
+    list-style: none;
+    margin-bottom: 3px;
+    padding-top:5px;
+    padding-bottom: 5px;
+    font-size: 16px;
+    background-color: mistyrose;
+}
+#add-to-own-movielist ul li:hover,
+#add-to-own-movielist ul li.selected{
+    background-color: gainsboro;
+}
+
+#add-to-own-movielist .tip-discription{
+    background-color: #000;
+    color: #fff;
+    padding: 5px 20px;
+    border-radius: 6px;
+    position: absolute;
+    top: 40px;
+    left:380px;
+}
+#add-to-own-movielist .tip-discription::after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+
+#add-to-own-movielist button{
+    padding: 12px 20px;
+    width: 260px;
+    margin: 0 5px;
+    background-color: transparent;
+    border: 0;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #ff7f50;
+    color: #ffffff;
+}
+#add-to-own-movielist button:hover{
+    background-color: #ffa16f;
+}
+#add-to-own-movielist .close-button{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 22px;
+    height: 22px;
+    background: url("/images/close.png") no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
+#add-to-own-movielist .description{
+    position: absolute;
+    top: 50px;
+    left:320px;
+}
+#add-to-own-movielist .add-to-movielist-button{
+    position: absolute;
+    top: 360px;
+    left:315px;
+}
+
+#add-to-own-movielist span{
+    font-size: 18px;
+}
+#add-to-own-movielist .description-textarea{
+    position: relative;
+    top: 15px;
+    width: 260px;
+    height: 240px;
+    font-size:18px;
+    background-color: transparent;
+}
+
+

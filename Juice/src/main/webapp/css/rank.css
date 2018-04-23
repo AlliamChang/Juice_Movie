@@ -1,0 +1,174 @@
+.ranking-list {
+    width: 900px;
+}
+
+.content-left {
+    width: 220px;
+    float: left;
+}
+
+.content-right {
+    width: 680px;
+    float: right;
+}
+
+.movie-poster {
+    float: left;
+    padding-top: 10px;
+}
+
+.movie-basicInfo {
+    padding-top: 10px;
+}
+
+.movie-piece {
+    width: 530px;
+    height: 170px;
+    /*border: 1px groove black;*/
+    border: 1px lightgray;
+    padding-left: 20px;
+    padding-bottom: 30px;
+    background-color: transparent;
+    box-shadow: 5px 5px 20px rgba(128, 128, 128, 0.6);
+}
+
+.movie-piece a {
+    color: black;
+    text-decoration: none;
+}
+
+.rankType-but {
+    padding: 10px;
+    background-color: powderblue;
+    border-color: transparent;
+    border-width: 2px;
+    font-size: 17px;
+    color: gray;
+    transition: all 0.3s;
+    width: 150px;
+    border-radius: 10px;
+    outline: none;
+}
+
+.choose-type {
+    margin-top: 40px;
+    border-right: black 1px;
+}
+
+
+.movie-poster {
+    float: left;
+}
+.movie-pic {
+    width:100px;
+}
+.rate-pic {
+    width:120px;
+}
+
+.rate {
+    color: orangered;
+}
+
+.tip-rate {
+    font-size: 14px;
+    color: grey;
+}
+.movie-name {
+    font-size: 20px;
+}
+.basic-info {
+    width: 400px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.movie-poster, .basic-info {
+    float: left;
+    /*margin: 10px;*/
+}
+
+
+
+
+
+
+
+
+
+/*翻页*/
+
+DIV.scott {
+    float: left;
+    PADDING-RIGHT: 3px;
+    PADDING-LEFT: 70px;
+    PADDING-BOTTOM: 3px;
+    MARGIN: 3px;
+    PADDING-TOP: 3px;
+    TEXT-ALIGN: center
+}
+
+DIV.scott span {
+    BORDER-RIGHT: #ddd 1px solid;
+    PADDING-RIGHT: 5px;
+    BORDER-TOP: #ddd 1px solid;
+    PADDING-LEFT: 5px;
+    PADDING-BOTTOM: 2px;
+    BORDER-LEFT: #ddd 1px solid;
+    COLOR: #88af3f;
+    MARGIN-RIGHT: 2px;
+    PADDING-TOP: 2px;
+    BORDER-BOTTOM: #ddd 1px solid;
+    TEXT-DECORATION: none
+}
+
+DIV.scott span:hover {
+    BORDER-RIGHT: #85bd1e 1px solid;
+    BORDER-TOP: #85bd1e 1px solid;
+    BORDER-LEFT: #85bd1e 1px solid;
+    COLOR: #638425;
+    BORDER-BOTTOM: #85bd1e 1px solid;
+    BACKGROUND-COLOR: #f1ffd6;
+    text-decoration: underline;
+}
+
+DIV.scott span:active {
+    BORDER-RIGHT: #85bd1e 1px solid;
+    BORDER-TOP: #85bd1e 1px solid;
+    BORDER-LEFT: #85bd1e 1px solid;
+    COLOR: #638425;
+    BORDER-BOTTOM: #85bd1e 1px solid;
+    BACKGROUND-COLOR: #f1ffd6
+}
+
+DIV.scott span.current {
+    BORDER-RIGHT: #b2e05d 1px solid;
+    PADDING-RIGHT: 5px;
+    BORDER-TOP: #b2e05d 1px solid;
+    PADDING-LEFT: 5px;
+    FONT-WEIGHT: bold;
+    PADDING-BOTTOM: 2px;
+    BORDER-LEFT: #b2e05d 1px solid;
+    COLOR: #fff;
+    MARGIN-RIGHT: 2px;
+    PADDING-TOP: 2px;
+    BORDER-BOTTOM: #b2e05d 1px solid;
+    BACKGROUND-COLOR: #b2e05d
+}
+
+DIV.scott span.disabled {
+    BORDER-RIGHT: #f3f3f3 1px solid;
+    PADDING-RIGHT: 5px;
+    BORDER-TOP: #f3f3f3 1px solid;
+    PADDING-LEFT: 5px;
+    PADDING-BOTTOM: 2px;
+    BORDER-LEFT: #f3f3f3 1px solid;
+    COLOR: #ccc;
+    MARGIN-RIGHT: 2px;
+    PADDING-TOP: 2px;
+    BORDER-BOTTOM: #f3f3f3 1px solid
+}
+
+DIV.scott span.disabled:hover {
+    text-decoration: none;
+}

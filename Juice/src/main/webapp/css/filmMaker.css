@@ -1,0 +1,109 @@
+.content-left{
+    width: 600px;
+    float: left;
+}
+
+.content-right{
+    width: 300px;
+    float: right;
+}
+
+a img:hover,
+a img.selected{
+    opacity: 0.7;
+}
+
+#filmMaker-poster{
+    padding-top: 15px;
+    float: left;
+}
+#filmMaker-name{
+    position:relative;
+    padding-left: 20px;
+    padding-top: 5px;
+}
+#filmMaker-name p{
+    font-size: 24pt;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.tip-number{
+    font-size: 16px;
+    font-weight: 500;
+    color: gray;
+    white-space: pre;
+}
+
+.turn-page-production{
+    display: block;
+    float: right;
+    position: relative;
+    bottom: 5px;
+    padding-right: 10px;
+}
+.turn-page-co-workers{
+    width:200px;
+    display: block;
+    float: right;
+    position: relative;
+    bottom:28px;
+    right:100px;
+    padding-right: 10px;
+}
+
+#production table p,
+#co-workers table p{
+    margin:0px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.tip-number{
+    font-size: 16px;
+    font-weight: 500;
+    color: gray;
+    white-space: pre;
+}
+
+#production a{
+    color: deepskyblue;
+    padding-bottom: 2px;
+    text-decoration: none;
+}
+
+#production a:hover,
+#production a.selected{
+    color: blue;
+    text-decoration: underline;
+    text-underline-color: blue;
+}
+
+/*button.show-more{*/
+    /*outline:none;*/
+    /*background-color: transparent;*/
+    /*border: 2px solid lightskyblue;*/
+    /*width: 250px;*/
+    /*height: 35px;*/
+    /*font-size: 17px;*/
+    /*font-family: 'Comic Sans MS';*/
+    /*margin-bottom: 10px;*/
+    /*transition:  all 0.2s;*/
+/*}*/
+
+#co-workers a{
+    text-decoration: none;
+}
+
+.recommand-filmMaker-tags{
+    color: grey;
+}
+
+#co-workers .turn-page-co-workers{
+    position: relative;
+    top:0px;
+}
+
+/*button.show-more:hover{*/
+    /*background: lightskyblue;*/
+/*}*/

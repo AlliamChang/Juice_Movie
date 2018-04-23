@@ -1,0 +1,532 @@
+.content-left{
+    width: 600px;
+    float: left;
+}
+
+.content-right{
+    width: 300px;
+    float: right;
+    padding-top: 50px;
+}
+
+a img:hover,
+a img.selected{
+    opacity: 0.7;
+}
+
+#change-info{
+    position: relative;
+    left: 10px;
+    width: 270px;
+    font-size: 20px;
+    line-height:35px;
+    background-color: #fff8dc;
+    color: #808080;
+    font-weight: 600;
+    border: solid #808080;
+    cursor: pointer;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: background 0.15s ease, color 0.15s ease, line-height 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+    transition: background 0.15s ease, color 0.15s ease, line-height 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+#change-info:hover{
+    color: #fff8dc;
+    background-color: #808080;
+    -webkit-animation: spasm 0.2s ease-in-out;
+    animation: spasm 0.2s ease-in-out;
+}
+
+#user-profile{
+    width: 600px;
+    height: 160px;
+}
+
+#user-pic{
+    padding-left: 15px;
+    padding-top: 15px;
+    float: left;
+}
+
+#user-name{
+    position:relative;
+    padding-left: 10px;
+    padding-top: 20px;
+}
+
+#user-name p{
+    font-size: 25pt;
+    font-weight: 600;
+}
+
+#user-nav{
+    position: relative;
+    bottom: 35px;
+}
+
+#user-nav a{
+    color:lightslategray;
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+    padding-bottom: 5px;
+}
+
+#user-nav a:hover,
+#user-nav a.selected{
+    color: black;
+    border-bottom: 1.5px solid black;
+}
+
+.tip-number{
+    font-size: 16px;
+    font-weight: 500;
+    color: gray;
+    white-space: pre;
+}
+
+#movie-watched .turn-page,
+#movie-collect .turn-page{
+    display: block;
+    float: right;
+    position: relative;
+    top: -35px;
+}
+
+#movie-watched p,
+#movie-collect p,
+#user-followers p,
+#user-following p{
+    margin: 0px;
+    text-align: center;
+}
+
+#movie-watched a,
+#movie-collect a,
+#movielist-div a,
+.reviews a{
+    color: deepskyblue;
+    padding-bottom: 2px;
+    text-decoration: none;
+}
+
+#movie-watched a:hover,
+#movie-collect a:hover,
+#movielist-div a:hover,
+.reviews a:hover,
+#movie-watched a.selected,
+#movie-collect a.selected{
+    color: blue;
+    text-decoration: underline;
+    text-underline-color: blue;
+}
+
+.little-title{
+    margin-bottom: -20px;
+}
+
+#reviews-type td{
+    padding-right: 25px;
+    padding-bottom: 30px;
+}
+
+.reviews-type-but{
+    padding: 3px;
+    background-color: transparent;
+    border-color:transparent;
+    border-width: 2px;
+    outline:none;
+    font-size: 17px;
+    color: gray;
+    transition: all 0.3s;
+}
+
+table.show-reviews td{
+    padding-bottom: 20px;
+}
+
+.review-piece{
+    width: 570px;
+    border: 1px groove white;
+    padding-left: 10px;
+    padding-bottom: 30px;
+}
+
+.movie-pic{
+    position: relative;
+    padding-top: 10px;
+    padding-right: 15px;
+    float: left;
+}
+
+.like-div{
+    display: block;
+    float: right;
+    position: relative;
+    padding-right: 50px;
+    transition: all 0.7s;
+}
+.like-div .like-pic{
+    width:20px;
+}
+.like-div .like-pic:hover{
+    width: 22px;
+}
+
+table.three-num{
+    padding-left: 10px;
+}
+
+table.three-num td{
+    padding: 10px;
+    border: 1px groove white;
+}
+
+p.three-num{
+    font-size: 25px;
+    font-family: "Kristen ITC";
+    text-align: center;
+}
+
+table.three-num a{
+    color: gray;
+    text-align: center;
+    text-decoration: none;
+}
+table.three-num a:hover,
+table.three-num a.selected{
+    color: purple;
+    border-bottom: 1px solid purple;
+}
+
+/**
+#user-keywords{
+    border: 1px groove white;
+}
+
+#user-keywords td{
+    padding-right: 30px;
+    padding-bottom: 15px;
+    color: gray;
+}
+**/
+
+#user-followers,
+#user-following{
+    border: 1px groove white;
+}
+#user-followers td,
+#user-following td{
+    padding-right: 15px;
+    padding-bottom: 10px;
+}
+#user-followers p,
+#user-following p{
+    text-align: center;
+}
+
+#user-followers a,
+#user-following a{
+    text-decoration: none;
+    color: skyblue;
+}
+
+#user-followers a:hover,
+#user-following a:hover,
+#user-followers a.selected,
+#user-following a.selected{
+    color: blue;
+    text-decoration: underline;
+    text-underline-color: blue;
+}
+
+#user-followers h4 a:hover,
+#user-following h4 a:hover{
+    color: blue;
+    border-bottom: 1px solid blue;
+}
+
+button.show-more{
+    outline:none;
+    background-color: transparent;
+    border: 2px solid lightskyblue;
+    width: 250px;
+    height: 35px;
+    font-size: 17px;
+    font-family: 'Comic Sans MS';
+    margin-bottom: 10px;
+    transition:  all 0.2s;
+}
+
+button.show-more:hover{
+    background: lightskyblue;
+}
+
+/*********user-movielist**************/
+#sort-div span,
+#create-collect-choose label{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-top: 0.2px solid lightgrey;
+    border-left: 0.2px solid lightgrey;
+    border-right: 0.2px solid lightgrey;
+    font-weight:500;
+}
+
+#sort-div span:hover,
+#create-collect-choose label:hover{
+    background-color: skyblue;
+}
+
+#sort-div span.selected,
+#create-collect-choose label.selected{
+    background-color: skyblue;
+    font-weight: 600;
+}
+
+.created-movielist-piece,
+.collected-movielist-piece,
+.movielist-piece{
+    width: 575px;
+    border: 1px groove white;
+    padding-left: 15px;
+    padding-top:15px;
+    padding-bottom: 30px;
+}
+
+.collect-div{
+    float: right;
+    float:top;
+    display: block;
+    padding-right: 15px;
+}
+
+#background-shade {
+    position: fixed;
+    z-index: 750;
+    background-color: rgba(227, 220, 192, 0.85);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+#delete-movielist{
+    z-index: 800;
+    position: fixed;
+    top:220px;
+    left:400px;
+    width: 500px;
+    height: 130px;
+    background-color: #fff8dc;
+    color: #808080;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+#delete-movielist button{
+    padding: 6px 10px;
+    width: 70px;
+    margin: 0 5px;
+    background-color: transparent;
+    border: 0;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #ff7f50;
+    color: #ffffff;
+}
+#delete-movielist button:hover{
+    background-color: #ffa16f;
+}
+
+#delete-movielist p{
+    position: absolute;
+    top:20px;
+    left: 40px;
+}
+
+#delete-movielist #yes-button{
+    position: absolute;
+    top:80px;
+    left: 320px;
+}
+#delete-movielist #cancel-button{
+    position: absolute;
+    top:80px;
+    left: 400px;
+}
+
+.movielist-tool-position {
+    z-index: 800;
+    position: fixed;
+    top:120px;
+    left:455px;
+    width: 400px;
+    height: 430px;
+    background-color: #fff8dc;
+    color: #808080;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+.movielist-tool-position .tip-text{
+    background-color: #000;
+    color: #fff;
+    padding: 5px 20px;
+    border-radius: 6px;
+    position: absolute;
+}
+.movielist-tool-position .tip-text::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+
+.movielist-tool-position #tip-title{
+    position: absolute;
+    top: 30px;
+    left:100px;
+}
+
+.movielist-tool-position #tip-discription{
+    position: absolute;
+    top: 115px;
+    left:150px;
+}
+
+.movielist-tool-position button {
+    padding: 12px 20px;
+    width: 320px;
+    margin: 0 5px;
+    background-color: transparent;
+    border: 0;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #ff7f50;
+    color: #ffffff;
+}
+.movielist-tool-position button:hover {
+    background-color: #ffa16f;
+}
+.movielist-tool-position .close-button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 22px;
+    height: 22px;
+    background: url("/images/close.png") no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
+#create-movielist .title{
+    position: absolute;
+    top: 70px;
+    left:40px;
+}
+#create-movielist .description{
+    position: absolute;
+    top: 120px;
+    left:40px;
+}
+#create-movielist .create{
+    position: absolute;
+    top: 350px;
+    left:35px;
+}
+#create-movielist span{
+    font-size: 18px;
+}
+ #create-movielist .title-line{
+     font-size: 18px;
+     width: 250px;
+ }
+ #create-movielist .description-textarea{
+     position: relative;
+     top: 10px;
+     width: 320px;
+     height: 160px;
+     font-size:18px;
+     background-color: transparent;
+ }
+
+/*******user-reviewDetail*********/
+#sort-div{
+    width: 570px;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+#sort-div span{
+    margin-right: 5px;
+}
+
+/*翻页*/
+
+DIV.scott {
+    PADDING-RIGHT: 3px;
+    PADDING-LEFT: 3px;
+    PADDING-BOTTOM: 3px;
+    MARGIN: 3px;
+    PADDING-TOP: 3px;
+    TEXT-ALIGN: center
+}
+DIV.scott span {
+    BORDER-RIGHT: #ddd 1px solid;
+    PADDING-RIGHT: 5px;
+    BORDER-TOP: #ddd 1px solid;
+    PADDING-LEFT: 5px;
+    PADDING-BOTTOM: 2px;
+    BORDER-LEFT: #ddd 1px solid;
+    COLOR: #88af3f; MARGIN-RIGHT: 2px;
+    PADDING-TOP: 2px;
+    BORDER-BOTTOM: #ddd 1px solid;
+    TEXT-DECORATION: none
+}
+DIV.scott span:hover {
+    BORDER-RIGHT: #85bd1e 1px solid;
+    BORDER-TOP: #85bd1e 1px solid;
+    BORDER-LEFT: #85bd1e 1px solid;
+    COLOR: #638425;
+    BORDER-BOTTOM: #85bd1e 1px solid;
+    BACKGROUND-COLOR: #f1ffd6;
+    text-decoration: underline;
+    cursor: pointer;
+}
+DIV.scott span:active {
+    BORDER-RIGHT: #85bd1e 1px solid;
+    BORDER-TOP: #85bd1e 1px solid;
+    BORDER-LEFT: #85bd1e 1px solid;
+    COLOR: #638425;
+    BORDER-BOTTOM: #85bd1e 1px solid;
+    BACKGROUND-COLOR: #f1ffd6
+}
+DIV.scott span.current {
+    BORDER-RIGHT: #b2e05d 1px solid;
+    PADDING-RIGHT: 5px; BORDER-TOP: #b2e05d 1px solid;
+    PADDING-LEFT: 5px; FONT-WEIGHT: bold;
+    PADDING-BOTTOM: 2px; BORDER-LEFT: #b2e05d 1px solid;
+    COLOR: #fff; MARGIN-RIGHT: 2px;
+    PADDING-TOP: 2px; BORDER-BOTTOM: #b2e05d 1px solid;
+    BACKGROUND-COLOR: #b2e05d
+}
+DIV.scott span.disabled {
+    BORDER-RIGHT: #f3f3f3 1px solid;
+    PADDING-RIGHT: 5px; BORDER-TOP: #f3f3f3 1px solid;
+    PADDING-LEFT: 5px; PADDING-BOTTOM: 2px;
+    BORDER-LEFT: #f3f3f3 1px solid; COLOR: #ccc;
+    MARGIN-RIGHT: 2px; PADDING-TOP: 2px;
+    BORDER-BOTTOM: #f3f3f3 1px solid
+}
+
+DIV.scott span.disabled:hover {
+    text-decoration: none;
+}
+

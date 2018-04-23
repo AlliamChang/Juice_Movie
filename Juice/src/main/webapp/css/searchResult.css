@@ -1,0 +1,68 @@
+.search-type-but{
+    padding: 3px;
+    background-color: transparent;
+    border-color:transparent;
+    border-width: 2px;
+    font-size: 17px;
+    color: gray;
+    transition: all 0.3s;
+}
+
+.movie-piece {
+    width: 600px;
+    height: 170px;
+    /*border: 1px groove black;*/
+    border: 1px lightgray;
+    padding-left: 20px;
+    padding-bottom: 30px;
+    background-color: transparent;
+    box-shadow: 5px 5px 20px rgba(128, 128, 128, 0.6);
+}
+
+.movie-piece a {
+    color: black;
+    text-decoration: none;
+}
+
+.movie-poster {
+    float: left;
+}
+.movie-pic {
+    width:100px;
+}
+.rate-pic {
+    width:120px;
+}
+
+.rate {
+    color: orangered;
+}
+
+.tip-rate {
+    font-size: 14px;
+    color: grey;
+}
+.movie-name {
+    font-size: 20px;
+}
+.basic-info {
+    width: 450px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.movie-poster, .basic-info {
+    float: left;
+    /*margin: 10px;*/
+}
+
+/*.jump-page {*/
+    /*width: 40px;*/
+    /*background-color: transparent;*/
+    /*border: 2px cornflowerblue;*/
+    /*border-radius: 20px;*/
+/*}*/
+/*.jump-page:focus {*/
+    /*background-color: transparent;*/
+    /*border: 3px cornflowerblue;*/
+/*}*/

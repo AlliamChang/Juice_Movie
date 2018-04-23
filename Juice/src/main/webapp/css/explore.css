@@ -1,0 +1,529 @@
+video {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    cursor: pointer;
+    animation-duration: .5s !important;
+    animation-delay: .1s !important;
+}
+
+.video-shade {
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    animation-duration: .5s !important;
+}
+
+.video-shade > .play-controller {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    cursor: pointer;
+    pointer-events: none;
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    background: url("../images/play.png") no-repeat;
+    background-size: cover;
+    opacity: 0;
+    -webkit-transform: scale(4);
+    transform: scale(4);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.video-shade > .play-controller.show {
+    opacity: 0.5;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.video-shade > .no-video {
+    text-align: center;
+    line-height: 100vh;
+    color: #fff;
+    text-shadow: 0 0 40px #fff;
+    animation-duration: .8s !important;
+    animation-delay: .5s !important;
+}
+
+.video-shade > .loader-wp {
+    position: absolute;
+    width: 40px;
+    height: 35px;
+    top: calc(50% - 17px);
+    left: calc(50% - 20px);
+}
+
+.video-shade > .loader-wp > div {
+    margin: 0;
+}
+
+.compatible-modal {
+    position: fixed;
+    z-index: 700;
+    box-sizing: border-box;
+    width: 300px;
+    padding: 20px 20px;
+    left: calc(50% - 150px);
+    top: calc(50% - 150px);
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px #808080;
+    background: #fff8dc;
+    color: #808080;
+    animation-duration: .5s !important;
+}
+
+.compatible-modal > p {
+    font-size: 18px;
+}
+
+.compatible-modal > span {
+    position: absolute;
+    cursor: pointer;
+    font-size: 20px;
+    left: 279px;
+    top: 0;
+}
+
+.compatible-modal > span:hover {
+    color: #000;
+}
+
+.opt-bar {
+    width: 900px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.opt-bar > *:not(.tooltip) {
+    display: inline-block;
+    position: relative;
+    padding: 0;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin: 0 20px;
+    height: 50px;
+    width: 50px;
+}
+
+.opt-bar > * > img {
+    height: 100%;
+}
+
+.opt-bar > label > img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    -webkit-transition: opacity .3s ease-in-out;
+    transition: opacity .3s ease-in-out;
+}
+
+.opt-bar > label > .full-heart {
+    opacity: 0;
+}
+
+.opt-bar > label > input:checked ~ .empty-heart {
+    opacity: 0;
+}
+
+.opt-bar > label > input:checked ~ .full-heart {
+    opacity: 1;
+}
+
+.opt-bar > button.dislike {
+    background: url("../images/bin_bottom.png") no-repeat center;
+    background-size: cover;
+}
+
+.opt-bar > *:not(.tooltip):hover {
+    -webkit-animation: spasm 0.2s ease-in-out;
+    animation: spasm 0.2s ease-in-out;
+}
+
+.opt-bar input {
+    display: none;
+}
+
+.opt-bar > .tooltip {
+    position: absolute;
+    display: block;
+    padding: 10px 15px;
+    background: #000;
+    color: #fff;
+    border-radius: 4px;
+
+    -webkit-animation: my-fade-in-down 3s ease-in-out;
+    animation: my-fade-in-down 3s ease-in-out;
+}
+
+.player-wrapper {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.light-swing {
+    transform-origin: 50% 18%;
+    animation-name: light-swing;
+    animation-duration: 1.5s;
+}
+
+.cards-wp {
+    width: 900px;
+    height: 600px;
+    margin-top: 20px;
+}
+
+.card {
+    position: absolute;
+    box-sizing: border-box;
+    padding: 60px 100px;
+    width: 850px;
+    height: 600px;
+    background: -webkit-radial-gradient(#595959, #212121);
+    background: radial-gradient(#595959, #212121);
+    color: #fff8dc;
+    box-shadow: 0 0 20px 10px rgba(0,0,0,.5);
+    -webkit-transition: all .8s ease-in-out;
+    transition: all .8s ease-in-out;
+}
+
+.card.preload {
+    background: rgba(0,0,0,.8);
+    -webkit-transform: scale(.95) translateX(50px);
+    transform: scale(.95) translateX(50px);
+}
+
+.card > .title {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.card > .title a {
+    display: inline-block;
+    text-decoration: none;
+    outline: none;
+    color: #fff8dc;
+    font-size: 28px;
+    -webkit-transition: color .3s ease-out, -webkit-transform .3s  cubic-bezier(0.42, 0, 0.47, 1.77);
+    transition: color .3s ease-out, transform .3s  cubic-bezier(0.42, 0, 0.47, 1.77);
+}
+.card > .title a:hover {
+    color: rgba(255,248,220,0.6);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.card > .poster-wp,
+.card > .info {
+    float: left;
+}
+
+.card > .poster-wp {
+    position: relative;
+    margin-top: 9px;
+}
+
+.card > .poster-wp::after {
+    content: "";
+    position: absolute;
+    pointer-events: none;
+    height: 80px;
+    width: 80px;
+    top: calc(50% - 40px);
+    left: calc(50% - 40px);
+    background: url("../images/play.png") no-repeat;
+    background-size: cover;
+    opacity: 0;
+    transform: scale(3);
+    -webkit-transform: scale(3);
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+.card > .poster-wp:hover::after {
+    opacity: 0.5;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.card > .poster-wp > img {
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.card > .poster-wp > img:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
+}
+
+.card > .info {
+    box-sizing: border-box;
+    width: 450px;
+    padding-left: 100px;
+}
+
+.card > table * {
+    vertical-align: top;
+}
+
+.card > .watched-area {
+    position: absolute;
+    bottom: 80px;
+}
+
+.card > .watched-area > label {
+    display: inline-block;
+    position: relative;
+    border-radius: 4px;
+    background: #111111;
+    height: 30px;
+    box-shadow: 0 0 8px 3px rgba(255,255,255,0.1) inset;
+    cursor: pointer;
+    -webkit-transition: background .2s ease-in-out;
+    transition: background .2s ease-in-out;
+}
+
+.card > .watched-area > label > span {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 40px;
+    height: 30px;
+}
+
+.card > .watched-area > label > span.yes {
+    background: url("../images/check_mark.png") no-repeat center;
+    background-size: 20px;
+}
+
+.card > .watched-area > label > span.no {
+    background: url("../images/cross.png") no-repeat center;
+    background-size: 20px;
+}
+
+.card > .watched-area > label > span.toggle {
+    position: absolute;
+    width: 37px;
+    height: 24px;
+    border-radius: 4px;
+    background: #434343;
+    left: 3px;
+    top: 3px;
+    -webkit-transition: left .2s ease-in-out;
+    transition: left .2s ease-in-out;
+}
+
+.card > .watched-area > label.checked {
+    background: #000;
+}
+
+.card > .watched-area > label.checked > span.toggle {
+    left: 40px;
+}
+
+.card > .watched-area input {
+    display: none;
+}
+
+.card > table > tr > * {
+    padding-bottom: 12px;
+}
+
+.card > table th {
+    text-align: right;
+    padding-right: 10px;
+}
+
+.card > .tooltip {
+    position: absolute;
+    padding: 10px 15px;
+    background: #fff;
+    color: #000;
+    border-radius: 4px;
+    opacity: 0;
+    left: 0;
+    bottom: -35px;
+    -webkit-animation: my-fade-in-up 3s ease-in-out;
+    animation: my-fade-in-up 3s ease-in-out;
+}
+
+@-webkit-keyframes light-swing {
+    0% {-webkit-transform: rotate(0);}
+    10% {-webkit-transform: rotate(7deg);}
+    18% {-webkit-transform: rotate(-5deg);}
+    24% {-webkit-transform: rotate(2deg);}
+    28% {-webkit-transform: rotate(0);}
+    100% {-webkit-transform: rotate(0);}
+}
+
+@keyframes light-swing {
+    0% {transform: rotate(0);}
+    10% {transform: rotate(7deg);}
+    18% {transform: rotate(-5deg);}
+    24% {transform: rotate(2deg);}
+    28% {transform: rotate(0);}
+    100% {transform: rotate(0);}
+}
+
+.shake-left {
+    animation-name: shake-left;
+}
+
+.shake-right {
+    animation-name: shake-right;
+    animation-delay: 0.5s;
+}
+
+.my-zoom-out-down {
+    animation-name: my-zoom-out-down;
+}
+
+@-webkit-keyframes shake-left {
+    0% {-webkit-transform: translateX(0);}
+    16% {-webkit-transform: translateX(-2px);}
+    34% {-webkit-transform: translateX(-2px);}
+    50% {-webkit-transform: translateX(0);}
+    100% {-webkit-transform: translateX(0);}
+}
+
+@keyframes shake-left {
+    0% {transform: translateX(0);}
+    16% {transform: translateX(-2px);}
+    34% {transform: translateX(-2px);}
+    50% {transform: translateX(0);}
+    100% {transform: translateX(0);}
+}
+
+@-webkit-keyframes shake-right {
+    0% {-webkit-transform: translateX(0);}
+    16% {-webkit-transform: translateX(2px);}
+    34% {-webkit-transform: translateX(2px);}
+    50% {-webkit-transform: translateX(0);}
+    100% {-webkit-transform: translateX(0);}
+}
+
+@keyframes shake-right {
+    0% {transform: translateX(0);}
+    16% {transform: translateX(2px);}
+    34% {transform: translateX(2px);}
+    50% {transform: translateX(0);}
+    100% {transform: translateX(0);}
+}
+
+@-webkit-keyframes my-fade-in-up {
+    0% {}
+    10% {bottom: 30px; opacity: .8;}
+    90% {bottom: 30px; opacity: .8;}
+    100% {bottom: -35px; opacity: 0;}
+}
+
+@keyframes my-fade-in-up {
+    0% {}
+    10% {bottom: 30px; opacity: .8;}
+    90% {bottom: 30px; opacity: .8;}
+    100% {bottom: -35px; opacity: 0;}
+}
+
+@-webkit-keyframes my-fade-in-down {
+    0% {-webkit-transform: translate(241px, -160px); opacity: 0;}
+    10% {-webkit-transform: translate(241px, -116px); opacity: .8;}
+    90% {-webkit-transform: translate(241px, -116px); opacity: .8;}
+    100% {-webkit-transform: translate(241px, -160px); opacity: 0;}
+}
+
+@keyframes my-fade-in-down {
+    0% {transform: translate(241px, -160px); opacity: 0;}
+    10% {transform: translate(241px, -116px); opacity: .8;}
+    90% {transform: translate(241px, -116px); opacity: .8;}
+    100% {transform: translate(241px, -160px); opacity: 0;}
+}
+
+@-webkit-keyframes my-zoom-out-down {
+    0% {}
+    100% {-webkit-transform: translate(20px, 310px) scale(.1); opacity: 0}
+}
+
+@keyframes my-zoom-out-down {
+    0% {}
+    100% {transform: translate(20px, 310px) scale(.1); opacity: 0}
+}
+
+/********* Loader ***********/
+@-webkit-keyframes line-scale-pulse-out-rapid {
+    0% {
+        -webkit-transform: scaleY(1);
+        transform: scaleY(1); }
+
+    80% {
+        -webkit-transform: scaleY(0.3);
+        transform: scaleY(0.3); }
+
+    90% {
+        -webkit-transform: scaleY(1);
+        transform: scaleY(1); } }
+
+@keyframes line-scale-pulse-out-rapid {
+    0% {
+        -webkit-transform: scaleY(1);
+        transform: scaleY(1); }
+
+    80% {
+        -webkit-transform: scaleY(0.3);
+        transform: scaleY(0.3); }
+
+    90% {
+        -webkit-transform: scaleY(1);
+        transform: scaleY(1); } }
+
+.loader {
+    box-sizing: border-box;
+    width: 40px;
+    height: 35px;
+    align-items: center;
+    justify-content: center;
+}
+
+.line-scale-pulse-out-rapid {
+    margin: 220px auto;
+}
+
+.line-scale-pulse-out-rapid > div {
+    background-color: #fff8dc;
+    width: 4px;
+    height: 35px;
+    float: left;
+    border-radius: 2px;
+    margin: 2px;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    display: inline-block;
+    -webkit-animation: line-scale-pulse-out-rapid 0.9s 0s infinite cubic-bezier(.11, .49, .38, .78);
+    animation: line-scale-pulse-out-rapid 0.9s 0s infinite cubic-bezier(.11, .49, .38, .78);
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+.line-scale-pulse-out-rapid > div:nth-child(2), .line-scale-pulse-out-rapid > div:nth-child(4) {
+    -webkit-animation-delay: 0.25s !important;
+    animation-delay: 0.25s !important;
+}
+
+.line-scale-pulse-out-rapid > div:nth-child(1), .line-scale-pulse-out-rapid > div:nth-child(5) {
+    -webkit-animation-delay: 0.5s !important;
+    animation-delay: 0.5s !important;
+}

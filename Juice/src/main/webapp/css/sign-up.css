@@ -1,0 +1,175 @@
+.join-card {
+    font-family: Arial;
+    margin: 50px auto 0;
+    padding: 10px 0 50px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    width: 600px;
+    background: rgba(255,248,220,0.8);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+    -webkit-transition: -webkit-filter .2s ease-in-out;
+    transition: filter .2s ease-in-out;
+}
+
+.join-card > h1 {
+    text-align: center;
+    color: #f0706d;
+}
+
+.join-card > .form-wrapper {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.join-card > .form-wrapper .input-wrapper {
+    position: relative;
+    margin: 55px 0;
+    font-size: 24px;
+}
+
+.join-card > .form-wrapper .input-wrapper:first-child {
+    margin-top: 70px;
+}
+
+.join-card > .form-wrapper .input-wrapper > .label {
+    position: absolute;
+    color: rgba(95,158,160,0.8);
+    top: 0;
+    left: 10px;
+    pointer-events: none;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+.join-card > .form-wrapper .input-wrapper > input {
+    width: 100%;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    font-size: inherit;
+    background: transparent;
+    color: rgba(95,158,160,0.8);
+    border-bottom: 2px solid rgba(95,158,160,0.8);
+}
+
+.join-card > .form-wrapper .input-wrapper > input.active + .label {
+    color: #5f9ea0;
+    left: 0;
+    top: -35px;
+}
+
+.join-card > .form-wrapper .input-wrapper > .line {
+    position: absolute;
+    width: 0;
+    left: 0;
+    bottom: 0;
+    border-bottom: 4px solid #5f9ea0;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.join-card > .form-wrapper .input-wrapper > input:focus ~ .line {
+    width: 100%;
+}
+
+.join-card > .form-wrapper .submit-wrapper > input{
+    display: block;
+    width: 100%;
+    background: #ff7f50;
+    color: #fff;
+    padding: 12px 0;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+.join-card > .form-wrapper .submit-wrapper > input:disabled {
+    opacity: .6;
+    cursor: not-allowed;
+}
+
+.join-card > .form-wrapper .input-wrapper > div {
+    position: absolute;
+    display: none;
+}
+
+.join-card > .form-wrapper .input-wrapper > .tip-icon {
+    right: -40px;
+    top: 0;
+    width: 26px;
+    height:26px;
+    background: no-repeat center;
+    background-size: 100%;
+}
+
+.join-card > .form-wrapper .input-wrapper > div.show {
+    display: block;
+}
+
+.join-card > .form-wrapper .input-wrapper > .tip-icon.correct {
+    background-image: url("../images/correct.png");
+}
+
+.join-card > .form-wrapper .input-wrapper > .tip-icon.wrong {
+    background-image: url("../images/wrong.png");
+}
+
+.join-card > .form-wrapper .input-wrapper > .tip-icon.loading {
+    background-image: url("../images/loading_0.png");
+    -webkit-animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite;
+}
+
+.join-card > .form-wrapper .input-wrapper > .tip {
+    top: -4px;
+    left: 120%;
+    font-size: 14px;
+    white-space: nowrap;
+    background: rgba(0,0,0,0.9);
+    color: #fff;
+    border-radius: 3px;
+    padding: 8px 15px;
+}
+
+.join-card > .form-wrapper .input-wrapper > .tip::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border: 5px solid transparent;
+    border-right-color: rgba(0,0,0,0.9);
+}
+
+.box {
+    position: relative;
+}
+
+.box > .loader {
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    left: calc(50% - 32px);
+    top: calc(50% - 32px);
+    background-size: cover;
+    background: url("../images/load.png") no-repeat center;
+    -webkit-animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% {-webkit-transform: rotate(0);}
+    50% {-webkit-transform: rotate(180deg);}
+    100% {-webkit-transform: rotate(360deg);}
+}
+
+@keyframes spin {
+    0% {transform: rotate(0);}
+    50% {transform: rotate(180deg);}
+    100% {transform: rotate(360deg);}
+}

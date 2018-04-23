@@ -1,0 +1,359 @@
+.content-left{
+    width: 620px;
+    float: left;
+    max-width: 620px;
+}
+
+.content-right{
+    width: 250px;
+    float: right;
+    padding-top: 50px;
+    max-width: 250px;
+}
+
+a{
+    text-decoration: none;
+    color: deepskyblue;
+}
+a:hover{
+    text-decoration: underline;
+    color: blue;
+}
+
+.movielist-piece{
+    border: 1px groove white;
+    padding-left: 15px;
+    padding-top:15px;
+}
+
+.collect-div{
+    float: right;
+    display: block;
+    top:20px;
+    padding-right: 40px;
+}
+
+#movielist-baseInfo{
+    padding-bottom: 15px;
+}
+
+.tip-number{
+    font-size: 16px;
+    font-weight: 500;
+    color: gray;
+    white-space: pre;
+}
+
+.contain-movies-piece{
+    border: 1px solid grey;
+    padding-left: 10px;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.contain-movies-piece a img{
+    float: left;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+
+.movie-image-div{
+    margin-right: 10px;
+}
+
+#background-shade {
+    position: fixed;
+    z-index: 750;
+    background-color: rgba(227, 220, 192, 0.85);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+/*add-movie-div*/
+#add-movies{
+    z-index: 800;
+    position: fixed;
+    top:120px;
+    left:455px;
+    width: 400px;
+    height: 430px;
+    background-color: #fff8dc;
+    color: #808080;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+#add-movies .tip-text,
+#add-movies .tip-discription{
+    background-color: #000;
+    color: #fff;
+    padding: 5px 20px;
+    border-radius: 6px;
+    position: absolute;
+}
+#add-movies .tip-text::after,
+#add-movies .tip-discription::after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+
+#add-movies button{
+    padding: 12px 20px;
+    width: 320px;
+    margin: 0 5px;
+    background-color: transparent;
+    border: 0;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #ff7f50;
+    color: #ffffff;
+}
+#add-movies button:hover{
+    background-color: #ffa16f;
+}
+#add-movies .close-button{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 22px;
+    height: 22px;
+    background: url("/images/close.png") no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
+#add-movies #tip-movie{
+    position: absolute;
+    top: 40px;
+    left:150px;
+}
+#add-movies .tip-discription{
+    position: absolute;
+    top: 135px;
+    left:160px;
+}
+#add-movies .movieName{
+    position: absolute;
+    top: 55px;
+    left:40px;
+}
+#add-movies .description{
+    position: absolute;
+    top: 140px;
+    left:40px;
+}
+#add-movies .add-button{
+    position: absolute;
+    top: 365px;
+    left:35px;
+}
+
+#add-movies #pre-search-ul{
+    z-index: 810;
+    position: absolute;
+    top: 102px;
+    left:0px;
+    width: 320px;
+    max-width: 320px;
+}
+
+#add-movies #pre-search-ul li{
+    list-style: none;
+    background-color: mistyrose;
+    font-size: 18px;
+    padding-left: 15px;
+    padding-top:5px;
+    padding-bottom: 5px;
+    margin-bottom: 2px;
+}
+
+#add-movies #pre-search-ul li:hover{
+    background-color: gainsboro;
+}
+
+#add-movies span{
+    font-size: 18px;
+}
+#add-movies .title-line{
+    padding-top:10px;
+    font-size: 18px;
+    width: 320px;
+}
+
+#add-movies .description-textarea{
+    position: relative;
+    top: 10px;
+    width: 320px;
+    height: 160px;
+    font-size:18px;
+    background-color: transparent;
+}
+
+#add-to-own-movielist{
+    z-index: 800;
+    position: fixed;
+    top:110px;
+    left:380px;
+    width: 600px;
+    height: 430px;
+    background-color: #fff8dc;
+    color: #808080;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+#add-to-own-movielist #own-movielists-table{
+    width: 300px;
+    float: left;
+    padding-left:15px;
+}
+#add-to-own-movielist #right-div{
+    width: 300px;
+    float: right;
+}
+#add-to-own-movielist #tag-movielist{
+    position: absolute;
+    top:50px;
+    left:20px;
+}
+#add-to-own-movielist ul{
+    position: absolute;
+    top:65px;
+    left:10px;
+    width: 270px;
+    height: 300px;
+    overflow: scroll;
+    padding:10px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+#add-to-own-movielist ul li{
+    list-style: none;
+    margin-bottom: 3px;
+    padding-top:5px;
+    padding-bottom: 5px;
+    font-size: 16px;
+    background-color: mistyrose;
+}
+#add-to-own-movielist ul li:hover,
+#add-to-own-movielist ul li.selected{
+    background-color: gainsboro;
+}
+
+#add-to-own-movielist .tip-discription{
+    background-color: #000;
+    color: #fff;
+    padding: 5px 20px;
+    border-radius: 6px;
+    position: absolute;
+    top: 40px;
+    left:380px;
+}
+#add-to-own-movielist .tip-discription::after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+
+#add-to-own-movielist button{
+    padding: 12px 20px;
+    width: 260px;
+    margin: 0 5px;
+    background-color: transparent;
+    border: 0;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #ff7f50;
+    color: #ffffff;
+}
+#add-to-own-movielist button:hover{
+    background-color: #ffa16f;
+}
+#add-to-own-movielist .close-button{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 22px;
+    height: 22px;
+    background: url("/images/close.png") no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
+#add-to-own-movielist .description{
+    position: absolute;
+    top: 50px;
+    left:320px;
+}
+#add-to-own-movielist .add-to-movielist-button{
+    position: absolute;
+    top: 360px;
+    left:315px;
+}
+
+#add-to-own-movielist span{
+    font-size: 18px;
+}
+#add-to-own-movielist .description-textarea{
+    position: relative;
+    top: 15px;
+    width: 260px;
+    height: 240px;
+    font-size:18px;
+    background-color: transparent;
+}
+
+#delete{
+    z-index: 800;
+    position: fixed;
+    top:220px;
+    left:400px;
+    width: 520px;
+    height: 130px;
+    background-color: #fff8dc;
+    color: #808080;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+#delete button{
+    padding: 6px 10px;
+    width: 70px;
+    margin: 0 5px;
+    background-color: transparent;
+    border: 0;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #ff7f50;
+    color: #ffffff;
+}
+#delete button:hover{
+    background-color: #ffa16f;
+}
+
+#delete p{
+    position: absolute;
+    top:20px;
+    left: 35px;
+}
+
+#delete #yes-button{
+    position: absolute;
+    top:80px;
+    left: 340px;
+}
+#delete #cancel-button{
+    position: absolute;
+    top:80px;
+    left: 420px;
+}

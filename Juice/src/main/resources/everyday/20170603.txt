@@ -1,0 +1,11 @@
+https://movie.douban.com/subject/26382962/?from=showing@http://www.imdb.com/title/tt6797204@888;5.6;5.6%;18.5%;36.4%;30.3%;9.2%;@6;7.7;@823
+https://movie.douban.com/subject/1578714/?from=showing@http://www.imdb.com/title/tt0451279@43110;7.5;23.5%;39.4%;29.0%;6.2%;1.8%;@29,819;8.4;@17990
+https://movie.douban.com/subject/26839466/?from=showing@http://www.imdb.com/title/tt5912470@5459;6.6;12.0%;27.0%;45.5%;12.8%;2.8%;@36;7.7;@10127
+https://movie.douban.com/subject/26877237/?from=showing@http://www.imdb.com/title/tt6095004@592;7.5;18.1%;47.6%;27.0%;6.5%;0.8%;@54;7.2;@114.68
+https://movie.douban.com/subject/26677981/?from=showing@http://www.imdb.com/title/tt5801026@3509;5.2;6.6%;19.1%;28.3%;19.9%;26.0%;@31;8.5;@890
+https://movie.douban.com/subject/26385746/?from=showing@http://www.imdb.com/title/tt6083388@3368;6.3;8.6%;24.4%;44.1%;18.5%;4.4%;@17;7.4;@5471
+https://movie.douban.com/subject/26260853/?from=showing@http://www.imdb.com/title/tt4630562@145678;7.2;14.9%;38.1%;38.4%;7.0%;1.6%;@83,038;7.1;@266736.0
+https://movie.douban.com/subject/3025669/?from=showing@http://www.imdb.com/title/tt1212428@1925;6.9;12.9%;35.4%;39.8%;7.6%;4.2%;@7,677;7.1;@430
+https://movie.douban.com/subject/6311303/?from=showing@http://www.imdb.com/title/tt1790809@92027;7.4;16.8%;42.5%;34.9%;5.0%;0.7%;@44,470;7.1;@93795
+https://movie.douban.com/subject/26279202/?from=showing@http://www.imdb.com/title/tt6912580@14179;6.1;13.8%;18.9%;37.6%;20.2%;9.4%;@28;6.1;@2601
+https://movie.douban.com/subject/26387939/?from=showing@http://www.imdb.com/title/tt5074352@266888;9.2;65.2%;29.3%;5.0%;0.4%;0.2%;@50,897;8.8;@112573

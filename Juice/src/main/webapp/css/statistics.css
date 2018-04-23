@@ -1,0 +1,97 @@
+h2.title {
+    text-align: center;
+}
+
+.chart-descriptions > li {
+    font-size: 18px;
+    line-height: 60px;
+    height: 60px;
+}
+
+.chart-descriptions > li > a {
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+    outline: none;
+    text-shadow: 0 0 20px #ff7f50;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+.chart-descriptions > li > a:hover {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.s-shade {
+    position: fixed;
+    background: rgba(0,0,0,0.85);
+    z-index: 1000;
+    width: 0;
+    height: 0;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.s-shade.show {
+    width: 100%;
+    height: 100%;
+}
+
+.s-shade > .close-button {
+    position: absolute;
+    font-size: 50px;
+    right: 20px;
+    top: 10px;
+    color: rgba(255,255,255,0.8);
+    cursor: pointer;
+}
+
+.s-shade > .close-button:hover {
+    color: #fff;
+}
+
+.chart {
+    position: absolute;
+    width: 50vw;
+    height: 70vh;
+    top: 15%;
+    left: 25%;
+}
+
+.chart.fir + .tab {
+    position: absolute;
+    left: calc(25% + 170px);
+    top: calc(15% + 5px);
+}
+
+.chart.fir + .tab input {
+    display: none;
+}
+
+.chart.fir + .tab > label {
+    display: inline-block;
+    box-sizing: border-box;
+    cursor: pointer;
+    width: 60px;
+    border-radius: 3px;
+    text-align: center;
+    margin: 0;
+    border: 2px solid #fff;
+    color: #fff;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+.chart.fir + .tab > input:disabled + label {
+    cursor: not-allowed;
+}
+
+.chart.fir + .tab > input:checked + label {
+    background: #fff;
+    color: #000;
+}
+
